@@ -1,0 +1,120 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Portfolio de Pat">
+	<!-- Tarjeta principal centrada; max-w-3xl limita el ancho para lectura cómoda. -->
+	<main class="mx-auto w-full max-w-3xl rounded-sm border border-zinc-300 bg-white shadow-sm">
+			<!-- Header de presentación con tipografía más grande desde sm en adelante. -->
+			<header class="border-b border-zinc-300 px-4 py-4 text-center sm:px-6 sm:py-5">
+				<h1 class="text-2xl font-extrabold tracking-tight text-zinc-900 sm:text-3xl">
+					Yolanda Fontanillas Yuste
+				</h1>
+				<p class="mt-1 text-xl font-bold text-zinc-900 sm:text-3xl">Desarrollo Front-End</p>
+			</header>
+
+			<!-- Mobile-first: los estilos base aplican a móvil y sm: ajusta en pantallas mayores. -->
+			<section class="bg-zinc-100 px-4 py-4 text-center sm:px-8 sm:py-5">
+				<!-- Avatar horizontal: la imagen llena todo el marco sin huecos. -->
+				<div class="mx-auto mb-3 h-40 w-56 sm:mb-4 sm:h-44 sm:w-64">
+					<div class="h-full w-full overflow-hidden rounded-xl bg-zinc-900 ring-4 ring-white">
+						<img
+							src="/img/fontanillus.png"
+							alt="Foto de perfil"
+							class="h-full w-full rounded-xl object-cover object-center"
+							loading="eager"
+							decoding="async"
+						/>
+					</div>
+				</div>
+
+				<h2 class="mt-2 text-xl font-bold text-zinc-900 sm:text-2xl">Acerca de mi</h2>
+				<div class="mx-auto mt-2 max-w-2xl space-y-3 text-left text-sm leading-relaxed text-zinc-900 sm:text-base">
+					<p>
+						Soy arquitecta de marketing digital.
+					</p>
+					<p>
+						Ayudo a emprendedores, marcas personales y negocios a construir la estructura
+						estratégica que sostiene su crecimiento digital.
+					</p>
+					<p>
+						Porque el problema no es la visibilidad.
+					</p>
+					<p class="font-semibold">
+						👉 Es la falta de arquitectura.
+					</p>
+					<p>
+						Muchas marcas publican contenido constantemente, pero sin una base detrás.
+					</p>
+					<p>
+						Sin estructura, el marketing se convierte en ruido.
+					</p>
+					<p>
+						Mi trabajo es diseñar esa arquitectura invisible que conecta:
+					</p>
+					<ul class="list-inside list-disc space-y-1">
+						<li>estrategia</li>
+						<li>contenido</li>
+						<li>posicionamiento</li>
+						<li>comunidad</li>
+						<li>conversión</li>
+					</ul>
+					<p>
+						Para que tu presencia digital tenga sentido, coherencia y resultados.
+					</p>
+					<p>
+						Trabajo con proyectos que quieren algo más que "estar en redes": quieren
+						construir una marca sólida, auténtica y con impacto.
+					</p>
+					<p class="font-semibold">
+						👉 Dedícate a lo que te apasiona: tu negocio. Yo me encargo de comunicarlo al
+						mundo.
+					</p>
+				</div>
+
+				<!-- Grid 1 columna en móvil y 2 columnas en sm+ para contacto/redes. -->
+				<div class="mt-4 overflow-hidden rounded-sm border-2 border-blue-950">
+					<div class="grid grid-cols-1 bg-blue-900 text-sm font-bold uppercase tracking-wide text-white sm:grid-cols-2">
+						<p class="py-1.5">Contactame</p>
+						<p class="border-t-2 border-blue-950 py-1.5 sm:border-l-2 sm:border-t-0">Mis redes</p>
+					</div>
+
+					<div class="grid grid-cols-1 sm:grid-cols-2">
+						<div class="flex min-h-24 flex-col items-center justify-center gap-2 bg-zinc-200 px-4 py-3">
+							<a class="break-all text-lg text-blue-700 underline decoration-2 hover:text-blue-900" href="mailto:fulanodetal@xxx.com">
+								mailto:fulanodetal@xxx.com
+							</a>
+							<a class="text-lg font-semibold text-blue-700 hover:text-blue-900" href="tel:+34900000000">
+								tel: +34 900 00 00
+							</a>
+						</div>
+
+						<div class="flex min-h-24 items-center justify-center gap-6 border-t-2 border-zinc-500 bg-zinc-200 px-4 py-3 sm:border-l-2 sm:border-t-0">
+							<a
+								href="https://github.com"
+								target="_blank"
+								rel="noreferrer"
+								aria-label="GitHub"
+								class="rounded-md p-1 text-zinc-950 transition hover:scale-110"
+							>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-10 w-10 fill-current" aria-hidden="true">
+									<path d="M12 .296a12 12 0 0 0-3.794 23.39c.6.111.82-.26.82-.577v-2.234c-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.757-1.333-1.757-1.09-.744.083-.729.083-.729 1.205.085 1.84 1.239 1.84 1.239 1.07 1.835 2.808 1.305 3.493.998.108-.775.418-1.305.761-1.605-2.665-.304-5.467-1.333-5.467-5.932 0-1.31.468-2.381 1.236-3.221-.124-.303-.536-1.524.117-3.176 0 0 1.008-.323 3.301 1.23a11.49 11.49 0 0 1 6.01 0c2.291-1.553 3.297-1.23 3.297-1.23.655 1.652.243 2.873.12 3.176.77.84 1.233 1.911 1.233 3.221 0 4.61-2.807 5.625-5.479 5.922.43.372.813 1.103.813 2.222v3.293c0 .32.216.694.825.576A12 12 0 0 0 12 .296" />
+								</svg>
+							</a>
+							<a
+								href="https://linkedin.com"
+								target="_blank"
+								rel="noreferrer"
+								aria-label="LinkedIn"
+								class="rounded-md p-1 text-zinc-950 transition hover:scale-110"
+							>
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-10 w-10 fill-current" aria-hidden="true">
+									<path d="M20.447 20.452H16.89v-5.569c0-1.328-.024-3.037-1.85-3.037-1.852 0-2.136 1.445-2.136 2.94v5.666H9.35V9h3.414v1.561h.047c.476-.9 1.637-1.85 3.37-1.85 3.604 0 4.27 2.372 4.27 5.456v6.285ZM5.337 7.433a2.063 2.063 0 1 1 0-4.126 2.063 2.063 0 0 1 0 4.126ZM7.118 20.452H3.553V9h3.565v11.452Z" />
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+	</main>
+</BaseLayout>
